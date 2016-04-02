@@ -361,7 +361,7 @@ add_array_bbs("24", "62", "00:d0:d0:51:d7:04");
 add_array_bbs("24", "62", "ec:43:f6:02:11:b5");
 
 
-var user_list = [
+var user_list = [ 
   ['aksenova<br>deposit:288.680000', , , '00:d0:d0:50:a6:16,90:E6:BA:40:F9:B4', '10.232.41.130'],
   ['konika<br>deposit:69.690000', , , 'c0:7e:40:59:1c:73,00:24:1D:77:F7:BC', '10.232.41.156'],
   ['borovikova<br>deposit:870.040000', , , 'a4:ba:db:dc:a0:e9', '10.232.41.13'],
