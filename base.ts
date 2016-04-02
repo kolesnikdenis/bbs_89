@@ -26,8 +26,8 @@ var af = {
 
 
 var i: number  = 0;
-while (i < user_list.length) {
-  var sqluser = user_list[i];
+while (i < user_list[].length) {
+  var sqluser: string = user_list[][i];
   if (sqluser[3].length > 20) {
     var arr_mac = sqluser[3].split(',');
   } else {
