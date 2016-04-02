@@ -1,7 +1,7 @@
 
 function fUpperCase(Str: string) {
-  var Buf = '';
-  for (var i = 0; i < Str.length; i++)
+  var Buf: string = '';
+  for (var i: number = 0; i < Str.length; i++)
     if (Str.charAt(i) >= 'a' && Str.charAt(i) <= 'z' || Str.charAt(i) >= 'A' && Str.charAt(i) <= 'Z')
       Buf = Buf + Str.charAt(i).toUpperCase();
     else
@@ -13,7 +13,7 @@ function CompStr(Str: string, Str2: string) {
   return fUpperCase(Str.toString()) == fUpperCase(Str2.toString());
 
 }
-af = {
+var af = {
   11: [],
   12: [],
   13: [],
@@ -24,26 +24,27 @@ af = {
   24: []
 }
 
-i = 0;
-while (i < beaches1.length) {
-  var sqluser = beaches1[i];
+
+var i: number  = 0;
+while (i < user_list.length) {
+  var sqluser = user_list[i];
   if (sqluser[3].length > 20) {
     var arr_mac = sqluser[3].split(',');
   } else {
     var arr_mac = [];
     arr_mac[0] = sqluser[3];
   }
-  test_num_user_mac = 0;
+  var test_num_user_mac: number = 0;
   while (test_num_user_mac < arr_mac.length) {
-    var length = 0;
-    for (var key in bbsmac) {
+    var length: number = 0;
+    for (var key: string in bbsmac) {
       if (bbsmac.hasOwnProperty(key)) {
         ++length;
-        var length1 = 0;
-        for (var key1 in bbsmac[key]) {
-          iii = false;
-          var ii = 0;
-          t = false;
+        var length1: number = 0;
+        for (var key1: string in bbsmac[key]) {
+          var iii: number  = false;
+          var ii: number = 0;
+          var t: number = false;
           ++length1;
           onu_mac = "";
           while (ii < bbsmac[key][key1].length) {
@@ -82,9 +83,9 @@ document.getElementById("24").innerHTML = af['24'];
 
 for (var key in bbsmac) {
   if (bbsmac.hasOwnProperty(key)) {
-    var length1 = 0;
-    onu_no_description = "";
-    onu_mac = "";
+    var length1: number = 0;
+    var onu_no_description: string = "";
+    var onu_mac: string = "";
     key1 = 0;
     for (var key1 in bbsmac[key]) {
       ++length1;
@@ -96,7 +97,7 @@ for (var key in bbsmac) {
       onu_no_description = "<hr>mac:<br><b> " + onu_mac + "<br> sfp:" + key + "<br> onu num:" + key1 + "</b>  <br>";
     }
     if (key > 0) {
-      v = "u" + key;
+      var v: string = "u" + key;
       document.getElementById(v).innerHTML = onu_no_description;
     }
   }
