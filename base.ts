@@ -24,6 +24,8 @@ var af = {
   24: []
 }
 
+//import foo = require('load_array');
+imort moo = module('load_array');
 
 var i: number  = 0;
 while (i < user_list[].length) {
@@ -86,10 +88,10 @@ for (var key in bbsmac) {
     var length1: number = 0;
     var onu_no_description: string = "";
     var onu_mac: string = "";
-    key1 = 0;
+    var key1: string  = 0;
     for (var key1 in bbsmac[key]) {
       ++length1;
-      var ii = 0;
+      var ii: number = 0;
       while (ii < bbsmac[key][key1].length) {
         onu_mac += bbsmac[key][key1][ii] + "<br>";
         ii++;
