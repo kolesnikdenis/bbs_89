@@ -15,8 +15,8 @@ function CompStr(Str: string, Str2: string) {
 
 }
 var af = {
-  11: []
-  12: []
+  11: [],
+  12: [],
   13: [],
   14: [],
   21: [],
